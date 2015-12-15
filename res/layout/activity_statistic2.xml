@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33ccff"
+    android:orientation="vertical" >
+    
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:columnCount="1" >
+
+        <Button
+            android:id="@+id/btn_statistic2_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/wallet_list_back_white" />
+        
+        <TextView
+            android:id="@+id/tv_statistic_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="Statistic"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    
+	</GridLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/bg_cloud"
+	    android:orientation="vertical" >
+
+	    <LinearLayout
+	        android:id="@+id/fr_amount"
+	        android:layout_width="match_parent"
+	        android:layout_height="80dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/bg_trans_white3"
+	        android:orientation="vertical" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+
+	            <TextView
+	                android:id="@+id/tv_statistic2_totalincome"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="20dp"
+	                android:paddingTop="17dp"
+	                android:text="Income: "
+	                android:textColor="#525252"
+	                android:textSize="16sp" />
+
+	            <TextView
+	                android:id="@+id/tv_statistic2_totalexpenditure"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="20dp"
+	                android:text="Expenditure: "
+	                android:textColor="#525252"
+	                android:textSize="16sp" />
+	        </LinearLayout>
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/fr_choose"
+	        android:layout_width="match_parent"
+	        android:layout_height="100dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"
+	        android:background="@drawable/bg_trans_white3"
+	        android:orientation="vertical" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="20dp" >
+
+	            <TextView
+	                android:id="@+id/tv_time_rp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:paddingLeft="20dp"
+	                android:text="TIME:"
+	                android:textColor="#525252"
+	                android:textSize="14sp" />
+
+	            <Spinner
+	                android:id="@+id/spn_statistic2_typestatistic"
+	                android:layout_width="match_parent"
+	                android:layout_height="50dp"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginLeft="10dp"
+	                android:background="@drawable/bg_trans_choose_black"
+	                android:gravity="right|center_vertical"
+	                android:textSize="18sp" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="20dp" >
+
+	            <TextView
+	                android:id="@+id/tv_type_rp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:paddingLeft="20dp"
+	                android:text="TYPE:"
+	                android:textColor="#525252"
+	                android:textSize="14sp" />
+
+	            <Spinner
+	                android:id="@+id/spn_statistic2_typechart"
+	                android:layout_width="match_parent"
+	                android:layout_height="50dp"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginLeft="10dp"
+	                android:background="@drawable/bg_trans_choose_black"
+	                android:gravity="right|center_vertical"
+	                android:textSize="18sp" />
+	        </LinearLayout>
+	    </LinearLayout>
+
+	    <GridLayout
+	        android:id="@+id/fr_date"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_marginTop="10dp"
+	        android:background="#333333" >
+
+	        <Button
+	            android:id="@+id/btn_statistic2_previous"
+	            android:layout_width="20dp"
+	            android:layout_height="20dp"
+	            android:layout_column="0"
+	            android:layout_gravity="left|center_vertical"
+	            android:layout_marginLeft="20dp"
+	            android:layout_row="0"
+	            android:background="@drawable/report_left" />
+
+	        <TextView
+	            android:id="@+id/tv_statistic2_date"
+	            android:layout_column="0"
+	            android:layout_gravity="center"
+	            android:layout_row="0"
+	            android:text="Choose"
+	            android:textColor="#FFFFFF" />
+
+	        <Button
+	            android:id="@+id/btn_statistic2_next"
+	            android:layout_width="20dp"
+	            android:layout_height="20dp"
+	            android:layout_column="0"
+	            android:layout_gravity="right|center_vertical"
+	            android:layout_marginRight="20dp"
+	            android:layout_row="0"
+	            android:background="@drawable/report_right" />
+	    </GridLayout>
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="20dp"
+	        android:orientation="vertical" >
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/layout_statistic2_chart"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+
+	    </LinearLayout>
+
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:text="NO DATA"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="#525252" />
+
+	</LinearLayout>
+
+</LinearLayout>

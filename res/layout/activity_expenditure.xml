@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:columnCount="1" >
+
+        <Button
+            android:id="@+id/btn_expen_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/wallet_list_back" />
+        
+        <TextView
+            android:id="@+id/tv_expend_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="Expenditure"
+            android:textColor="#33ccff"
+            android:textSize="18sp" />
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_income_light"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/lay_bodyexpen"
+            android:layout_width="match_parent"
+            android:layout_height="385dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lay_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lay_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_trans_white1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp" >
+
+                    <TextView
+                        android:id="@+id/tv_expen_amount"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="AMOUNT:"
+                        android:textColor="#d3d3d3"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/txt_expen_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/bg_trans"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/bg_trans_white2"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp" >
+
+                    <TextView
+                        android:id="@+id/tv_expen_notice"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="DESCRIPTION:"
+                        android:textColor="#d3d3d3"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/txt_expen_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/tv_expen_notice"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/bg_trans"
+                        android:ems="10"
+                        android:paddingLeft="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/bg_trans_white2"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <TextView
+                        android:id="@+id/tv_expen_walletname"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="WALLET:"
+                        android:textColor="#d3d3d3"
+                        android:textSize="12sp" />
+
+                    <Spinner
+                        android:id="@+id/spn_expen_wallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/tv_expen_walletname"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/bg_trans_choose"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/lay_amount"
+                    android:background="@drawable/bg_trans_white2"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <TextView
+                        android:id="@+id/tv_expen_category"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="CATEGORY:"
+                        android:textColor="#d3d3d3"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Spinner
+                                android:id="@+id/spn_expen_danhmuccon"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_weight="2"
+                                android:background="@drawable/bg_trans_choose"
+                                android:paddingLeft="10dp" />
+
+                            <Button
+                                android:id="@+id/btn_expen_createcategory"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginStart="20dp"
+                                android:background="@drawable/btn_edit" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/bg_trans_white2"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <TextView
+                        android:id="@+id/tv_expen_date"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="DATE:"
+                        android:textColor="#d3d3d3"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp" >
+
+                        <EditText
+                            android:id="@+id/txt_expen_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:background="@drawable/bg_trans"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:inputType="date"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/btn_expen_date"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical|center"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/btn_date" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@drawable/bg_trans_white2"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <TextView
+                        android:id="@+id/tv_expen_time"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="TIME:"
+                        android:textColor="#d3d3d3"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp" >
+
+                        <EditText
+                            android:id="@+id/txt_expen_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:background="@drawable/bg_trans"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:inputType="time"
+                            android:paddingLeft="10dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/btn_expen_time"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/btn_clock" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay_bodyexpen"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_expen_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="#e4e0c5"
+                android:text="SUBMIT"
+                android:textColor="#462e17" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

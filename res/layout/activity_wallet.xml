@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:columnCount="1" >
+
+        <Button
+            android:id="@+id/btn_wallet_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/wallet_list_back" />
+
+        <TextView
+            android:id="@+id/tv_wallet_title"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="Wallet List"
+            android:textColor="#33ccff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_wallet_createwallet"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_column="0"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_row="0"
+            android:background="@drawable/wallet_list_create" />
+    </GridLayout>    
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wallet_list_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_wallet_totalbalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="TOTAL BALANCE:"
+            android:textColor="#171717"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_wallet_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="500.000 VND"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#171717"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/imgv_wallet_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/line" />
+
+        <ListView
+            android:id="@+id/lv_wallet_listwallet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

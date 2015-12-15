@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:columnCount="1" >
+
+        <Button
+            android:id="@+id/btn_createwallet_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"            android:background="@drawable/wallet_list_back" />
+
+        <TextView
+            android:id="@+id/tv_createwallet_title"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="Create Wallet"
+            android:textColor="#33ccff"
+            android:textSize="18sp" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/wallet_list_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/txt_createwallet_namewallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:background="@drawable/txt_white"
+                android:ems="10"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Please enter your Wallet Name"
+                android:inputType="textCapWords"
+                android:textColor="#171717"
+                android:textColorHint="#989898"
+                android:textSize="15sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/txt_createwallet_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/txt_white"
+                android:ems="10"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Amount"
+                android:inputType="number"
+                android:textColor="#171717"
+                android:textColorHint="#989898"
+                android:textSize="15sp" />
+            
+            <EditText
+                android:id="@+id/txt_createwallet_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/txt_white"
+                android:ems="10"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Description"
+                android:textColor="#171717"
+                android:textColorHint="#989898"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_createwallet_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="#372f2d"
+                android:text="SUBMIT"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/bg_login"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgv_login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/txt_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:gravity="center_vertical|start"
+            android:hint="Username"
+            android:text="admin"
+            android:textColor="#33CCFF"
+            android:textColorHint="#CCFFFFFF"
+            android:textColorLink="#CCFFFFFF" />
+
+        <EditText
+            android:id="@+id/txt_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center_vertical|start"
+            android:hint="Password"
+            android:password="true"
+            android:textColor="#33CCFF"
+            android:textColorHint="#CCFFFFFF"
+            android:textColorLink="#CCFFFFFF"
+            android:text="admin"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_login_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_login"
+                android:text="LOGIN"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_login_register"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/btn_trans"
+                android:text="Create an account?"
+                android:textColor="#33CCFF"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

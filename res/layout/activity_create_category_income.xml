@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp" >
+
+        <Button
+            android:id="@+id/btn_createcategoryincome_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/wallet_list_back" />
+
+        <Button
+            android:id="@+id/btn_createcategoryincome_OK"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_column="0"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_row="0"
+            android:background="@drawable/income_check_1" />
+
+        <TextView
+            android:id="@+id/tv_createcategoryincome_tittle"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="Create Income"
+            android:textColor="#33ccff"
+            android:textSize="18sp" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp" >
+
+        <TextView
+            android:id="@+id/tv_createcategoryincome_nameincome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ten thu nhap" />
+
+        <EditText
+            android:id="@+id/txt_createcategoryincome_nameincome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+</FrameLayout>

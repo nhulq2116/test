@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--LABEL -->
+	<!-- WALLET -->
+    <string name="app_name">Money Power</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lb_wallet">YOUR WALLET</string>
+    <string name="lb_listwallet">LIST ALL WALLETS</string>
+	<string name="dangnhap">Đăng nhập</string>
+    <string name="dangky">Đăng ký</string>
+    <string name="tendangnhap">Tên đăng nhập</string>
+    <string name="matkhau">Mật khẩu</string>
+    <string name="rematkhau">Nhập lại mật khẩu</string>
+    <string name="thu">Thu</string>
+    <string name="chi">Chi</string>
+    <string name="vi">Ví</string>
+    <string name="thongke">Thống Kê</string>
+    <string name="hello">Hello </string>
+    
+    <color name="clrorange">#b92902</color>
+    
+    
+    
+    
+    
+    
+</resources>

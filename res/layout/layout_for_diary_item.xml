@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:useDefaultMargins="true" >
+
+    <TextView
+        android:id="@+id/tv_layoutdiary_namecategory"
+        android:layout_width="150dp"
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:layout_row="0"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="Ten giao dich" />
+
+    <TextView
+        android:id="@+id/tv_layoutdiary_namewallet"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0"
+        android:gravity="fill_horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="Ten Vi" />
+
+    <TextView
+        android:id="@+id/tv_layoutdiary_amount"
+        android:layout_column="2"
+        android:layout_gravity="right"
+        android:layout_row="0"
+        android:text="So Tien" />
+
+    <TextView
+        android:id="@+id/tv_layoutdiary_notice"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="1"
+        android:paddingLeft="30dp"
+        android:text="Ghi Chu" />
+
+</GridLayout>

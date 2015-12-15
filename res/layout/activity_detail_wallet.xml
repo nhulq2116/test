@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <GridLayout
+        android:id="@+id/lay_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:useDefaultMargins="true" >
+
+        <Button
+            android:id="@+id/btn_detailwallet_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/wallet_list_back" />
+
+        <TextView
+            android:id="@+id/tv_detailwallet_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:text="wallet name"
+            android:textColor="#33ccff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_detailwallet_delete"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical|end"
+            android:layout_row="0"
+            android:background="@drawable/btn_delete" />
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/wallet_list_bg" >
+
+        <GridLayout
+            android:id="@+id/detailwallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:columnCount="1" >
+
+            <TextView
+                android:id="@+id/tv_detailwallet_titlebalance"
+                android:layout_column="0"
+                android:layout_gravity="fill_horizontal"
+                android:layout_row="0"
+                android:gravity="center"
+                android:text="B A L A N C E"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_detailwallet_amount"
+                android:layout_gravity="fill_horizontal"
+                android:gravity="center"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_detailwallet_originalamount"
+                android:layout_gravity="fill_horizontal"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_detailwallet_notice"
+                android:layout_column="0"
+                android:layout_gravity="fill_horizontal"
+                android:layout_row="3"
+                android:gravity="center"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="14sp" />
+
+        </GridLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp" >
+
+        <ListView
+            android:id="@+id/lv_detailwallet_listhistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp" >
+
+        </ListView>
+    </RelativeLayout>
+
+</FrameLayout>

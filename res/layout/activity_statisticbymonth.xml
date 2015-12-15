@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+	
+	        <GridLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <Button
+	                android:id="@+id/btn_statisticbymonth_perviousmonth"
+	                android:layout_column="0"
+	                android:layout_gravity="center_vertical|start"
+	                android:layout_row="0"
+	                android:text="&lt;" />
+	
+	            <TextView
+	                android:id="@+id/tv_statisticbymonth_date"
+	                android:layout_column="0"
+	                android:layout_gravity="center_vertical|center"
+	                android:layout_row="0"
+	                android:text="Date"
+	                android:textSize="22sp" />
+	
+	            <Button
+	                android:id="@+id/btn_statisticbymonth_nextmonth"
+	                android:layout_width="wrap_content"
+	                android:layout_column="0"
+	                android:layout_gravity="center_vertical|end"
+	                android:layout_row="0"
+	                android:text=">" />
+	
+	        </GridLayout>
+	
+	        <TextView
+	            android:id="@+id/tv_statisticbymonth_totalincome"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp"
+	            android:text="Income: "
+	            android:textSize="18sp" />
+	
+	        <TextView
+	            android:id="@+id/tv_statisticbymonth_totalexpenditure"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp"
+	            android:text="Expenditure: "
+	            android:textSize="18sp" />
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/tv_statisticbymonth_titleincome"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="#b0c4de"
+	                android:gravity="center"
+	                android:text="Income"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	            <LinearLayout
+	                android:id="@+id/chart_income"
+	                android:layout_width="match_parent"
+	                android:layout_height="300dp"
+	                android:orientation="vertical"
+	                tools:ignore="Orientation" >
+	            </LinearLayout>
+	
+	            <ListView
+	                android:id="@+id/lv_statisticbymonth_income"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+	            </ListView>
+	
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/tv_statisticbymonth_titleexpend"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="#b0c4de"
+	                android:gravity="center"
+	                android:text="Expenditure"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+				<LinearLayout
+	                android:id="@+id/chart_expend"
+	                android:layout_width="match_parent"
+	                android:layout_height="300dp"
+	                android:orientation="vertical"
+	                tools:ignore="Orientation" >
+	            </LinearLayout>
+	            <ListView
+	                android:id="@+id/lv_statisticbymonth_expenditure"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+	            </ListView>
+	
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:id="@+id/year_layout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+
+	            <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="match_parent"
+	                android:layout_height="30dp"
+	                android:background="#b0c4de"
+	                android:gravity="center"
+	                android:text="year summaries"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	            <LinearLayout
+	                android:id="@+id/linechart"
+	                android:layout_width="match_parent"
+	                android:layout_height="400dp"
+	                android:orientation="vertical"
+	                tools:ignore="Orientation" >
+	            </LinearLayout>
+
+	        </LinearLayout>
+
+	    </LinearLayout>
+	</LinearLayout>
+</ScrollView>
